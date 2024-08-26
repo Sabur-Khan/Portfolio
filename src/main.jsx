@@ -7,7 +7,7 @@ import About from './pages/About/About.jsx';
 import Contact from './pages/Contact/Contact.jsx';
 import Projects from './pages/Projects/Projects.jsx';
 import Rootlayouts from './component/Layout/RootLayouts.jsx';
-import BlogContent from './pages/BlogContent/BlogContent.jsx';
+
 import { createRoutesFromElements, createBrowserRouter, Route, RouterProvider } from "react-router-dom";
 
 // React Router Path Code
@@ -21,7 +21,6 @@ const router = createBrowserRouter(
       <Route path='/Projects' element={<Projects/>} />
       <Route path='/Blog' element={<Blog/>} />
       <Route path='/Contact' element={<Contact/>} />
-      <Route path='/BlogContent' element={<BlogContent/>} />
 
     </Route>
    
