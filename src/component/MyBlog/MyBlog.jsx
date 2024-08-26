@@ -1,6 +1,9 @@
 import React from "react";
 import MyBlogCard from "../MyBlogCard/MyBlogCard";
 import blogData from "../../blogData/blogData";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 const MyBlog = () => {
   console.log(blogData);
   return (
@@ -16,45 +19,183 @@ const MyBlog = () => {
             key={blogData.id}
             images={blogData.images}
             title={blogData.title}
-
             shortBlogOne={blogData.shortBlogOne}
             shortBlogTwo={blogData.shortBlogTwo}
             shortBlogThree={blogData.shortBlogThree}
             shortBlogFour={blogData.shortBlogFour}
             shortBlogFive={blogData.shortBlogFive}
             shortBlogSix={blogData.shortBlogSix}
-            
             blogInfoOne={blogData.blogInfoOne}
             blogInfoTwo={blogData.blogInfoTwo}
             blogInfoThree={blogData.blogInfoThree}
             blogInfoFour={blogData.blogInfoFour}
             blogInfoFive={blogData.blogInfoFive}
             blogInfoSix={blogData.blogInfoSix}
-
           />
         ))}
       </div>
 
       <div className="my-16 ">
-        <h1>Recent Blog</h1>
+        <h1 className="text-white font-Montserrat text-2xl font-bold mb-10">
+          Recent Blog
+        </h1>
 
-        <button
-          className="btn"
-          onClick={() => document.getElementById("my_modal_3").showModal()}
+        <Carousel 
+          additionalTransfrom={0}
+          arrows
+          autoPlaySpeed={3000}
+          centerMode={false}
+          className=""
+          containerClass="container-with-dots"
+          dotListClass=""
+          draggable
+          focusOnSelect={false}
+          infinite
+          itemClass=""
+          keyBoardControl
+          minimumTouchDrag={80}
+          pauseOnHover
+          renderArrowsWhenDisabled={false}
+          renderButtonGroupOutside={false}
+          renderDotsOutside={false}
+          responsive={{
+            desktop: {
+              breakpoint: {
+                max: 3000,
+                min: 1024,
+              },
+              items: 3,
+              partialVisibilityGutter: 40,
+            },
+            mobile: {
+              breakpoint: {
+                max: 464,
+                min: 0,
+              },
+              items: 1,
+              partialVisibilityGutter: 30,
+            },
+            tablet: {
+              breakpoint: {
+                max: 1024,
+                min: 464,
+              },
+              items: 2,
+              partialVisibilityGutter: 30,
+            },
+          }}
+          rewind={false}
+          rewindWithAnimation={false}
+          rtl={false}
+          shouldResetAutoplay
+          showDots={true}
+          sliderClass=""
+          slidesToSlide={1}
+          swipeable
         >
-          open modal
-        </button>
-        <dialog id="my_modal_3" className="modal">
-          <div className="modal-box">
-            <form method="dialog">
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-                ✕
-              </button>
-            </form>
-            <h3 className="font-bold text-lg">Hello!</h3>
-            <p className="py-4">Press ESC key or click on ✕ button to close</p>
+          <div className=" border mx-2 ">
+            <img
+              className="w-full"
+              src="https://i.postimg.cc/P5Z0wx4r/blog6.jpg"
+              alt=""
+            />
+            <h2 className="text-white text-left my-5 font-sans font-bold text-xl px-2 ">
+              Lorem ipsum dolor sit amet.
+            </h2>
+            <p className="text-white text-left font-sans font-normal text-base px-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, sit? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Non, praesentium. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Modi, expedita?
+            </p>
+            <button className="bg-white m-2 py-2 rounded px-3">Redmore</button>
           </div>
-        </dialog>
+          <div className=" border mx-2 ">
+            <img
+              className="w-full"
+              src="https://i.postimg.cc/P5Z0wx4r/blog6.jpg"
+              alt=""
+            />
+            <h2 className="text-white text-left my-5 font-sans font-bold text-xl px-2 ">
+              Lorem ipsum dolor sit amet.
+            </h2>
+            <p className="text-white text-left font-sans font-normal text-base px-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, sit? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Non, praesentium. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Modi, expedita?
+            </p>
+            <button className="bg-white m-2 py-2 rounded px-3">Redmore</button>
+          </div>
+          <div className=" border mx-2 ">
+            <img
+              className="w-full"
+              src="https://i.postimg.cc/P5Z0wx4r/blog6.jpg"
+              alt=""
+            />
+            <h2 className="text-white text-left my-5 font-sans font-bold text-xl px-2 ">
+              Lorem ipsum dolor sit amet.
+            </h2>
+            <p className="text-white text-left font-sans font-normal text-base px-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, sit? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Non, praesentium. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Modi, expedita?
+            </p>
+            <button className="bg-white m-2 py-2 rounded px-3">Redmore</button>
+          </div>
+          <div className=" border mx-2 ">
+            <img
+              className="w-full"
+              src="https://i.postimg.cc/P5Z0wx4r/blog6.jpg"
+              alt=""
+            />
+            <h2 className="text-white text-left my-5 font-sans font-bold text-xl px-2 ">
+              Lorem ipsum dolor sit amet.
+            </h2>
+            <p className="text-white text-left font-sans font-normal text-base px-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, sit? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Non, praesentium. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Modi, expedita?
+            </p>
+            <button className="bg-white m-2 py-2 rounded px-3">Redmore</button>
+          </div>
+          <div className=" border mx-2 ">
+            <img
+              className="w-full"
+              src="https://i.postimg.cc/P5Z0wx4r/blog6.jpg"
+              alt=""
+            />
+            <h2 className="text-white text-left my-5 font-sans font-bold text-xl px-2 ">
+              Lorem ipsum dolor sit amet.
+            </h2>
+            <p className="text-white text-left font-sans font-normal text-base px-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, sit? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Non, praesentium. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Modi, expedita?
+            </p>
+            <button className="bg-white m-2 py-2 rounded px-3">Redmore</button>
+          </div>
+          <div className=" border mx-2 mb-10">
+            <img
+              className="w-full"
+              src="https://i.postimg.cc/P5Z0wx4r/blog6.jpg"
+              alt=""
+            />
+            <h2 className="text-white text-left my-5 font-sans font-bold text-xl px-2 ">
+              Lorem ipsum dolor sit amet.
+            </h2>
+            <p className="text-white text-left font-sans font-normal text-base px-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, sit? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Non, praesentium. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Modi, expedita?
+            </p>
+            <button className="bg-white m-2 py-2 rounded px-3">Redmore</button>
+          </div>
+        </Carousel>
       </div>
     </div>
   );
