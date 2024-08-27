@@ -3,10 +3,10 @@ import Container from "../../component/Container/Container";
 import leftSideImage from '../../assets/images/banner-profile.png'
 const About = () => {
   return (
-    <div className='my-14 lg:px-2 md:px-4 sm:px-5 px-5'>
+    <div className='lg:my-14 md:my-5 my-5 lg:px-2 md:px-4 sm:px-5 px-5'>
       <Container>
         <div className=" text-center ">
-          <h2 className="relative before:w-6 before:h-6 before:bg-[#f3c623] before:z-50 before:absolute before:bottom-[-12px] before:rounded-full before:shadow-2xl before:ring-inset before:ring-[#0a182e] before:ring-8 lg:before:left-[49%] md:before:left-[50%] sm:before:left-[50%] before:left-[45%] after:w-[250px] after:h-[2px] after:bg-white after:absolute after:bottom-0 lg:after:left-[42%] md:after:left-[34%] sm:after:left-[32%] after:left-[16%] font-Montserrat text-white pb-6 font-medium text-3xl">
+          <h2 className="relative before:w-6 before:h-6 before:bg-[#f3c623] before:z-50 before:absolute before:bottom-[-12px] before:rounded-full before:shadow-2xl before:ring-inset before:ring-[#0a182e] before:ring-8 lg:before:left-[49%] md:before:left-[50%] sm:before:left-[50%] before:left-[45%] after:w-[200px] after:h-[2px] after:bg-white after:absolute after:bottom-0 lg:after:left-[42%] md:after:left-[34%] sm:after:left-[32%] after:left-[18%] font-Montserrat text-white pb-6 font-medium text-3xl">
             ABOUT <span className=" text-[#e9af1d]">ME</span>
           </h2>
         </div>
@@ -22,12 +22,12 @@ const About = () => {
             </div>
             <div className="lg:w-[40%] md:w-[80%] sm:w-[40%] w-500px flex justify-between mt-10">
 
-              <button className=" bg-[#e9af1d] py-3 px-5 border-2 border-[#e9af1d] font-mono font-bold rounded-md hover:text-white hover:bg-transparent text-[18px] transition-all duration-500">Contact Me</button>
-              <button className=" bg-[#e9af1d] py-3 px-5 border-2 border-[#e9af1d] font-mono font-bold rounded-md hover:text-white hover:bg-transparent text-[18px] transition-all duration-500">My Blog</button>
+              <button className=" bg-[#e9af1d] py-3 px-5 border-2 border-[#e9af1d] font-sans font-bold rounded-md hover:text-white hover:bg-transparent text-[18px] transition-all duration-500">Contact Me</button>
+              <button className=" bg-[#e9af1d] py-3 px-5 border-2 border-[#e9af1d] font-sans font-bold rounded-md hover:text-white hover:bg-transparent text-[18px] transition-all duration-500">My Blog</button>
             </div>
           </div>
           <div>
-            <h2 className="relative text-center before:w-6 before:h-6 before:bg-[#f3c623] before:z-50 before:absolute before:bottom-[-12px] before:rounded-full before:shadow-2xl before:ring-inset before:ring-[#0a182e] before:ring-8 lg:before:left-[49%] md:before:left-[50%] sm:before:left-[50%] before:left-[45%] after:w-[250px] after:h-[2px] after:bg-white after:absolute after:bottom-0 lg:after:left-[44%] lg:after:w-[100px] md:after:left-[30%] sm:after:left-[32%] after:left-[16%] font-Montserrat text-white pb-6 font-medium text-3xl">
+            <h2 className="relative text-center before:w-6 before:h-6 before:bg-[#f3c623] before:z-50 before:absolute before:bottom-[-12px] before:rounded-full before:shadow-2xl before:ring-inset before:ring-[#0a182e] before:ring-8 lg:before:left-[49%] md:before:left-[50%] sm:before:left-[50%] before:left-[45%] after:w-[200px] after:h-[2px] after:bg-white after:absolute after:bottom-0 lg:after:left-[44%] lg:after:w-[100px] md:after:left-[30%] sm:after:left-[32%] after:left-[18%] font-Montserrat text-white pb-6 lg:my-0 md:my-6 my-6 font-medium text-3xl">
               My <span className=" text-[#e9af1d]">Skills</span>
             </h2>
             <div>

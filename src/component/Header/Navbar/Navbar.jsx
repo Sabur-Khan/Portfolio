@@ -42,33 +42,33 @@ const Navbar = () => {
               <div className='my-5'>
 
                 <div class="text-sky-600 mb-5 pb-2 border-b">
-                  <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/Home'>
+                  <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat hover:text-orange-500 transition-all duration-200  bg-blue-500 active:bg-blue-600' to='/Home'>
                     <IoHome className='mr-5 text-xl'/> Home
                   </Link>
                   
                 </div>
             
                 <div class="text-sky-600 mb-5 pb-2 border-b">
-                  <Link className=' flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/About'>
+                  <Link className=' flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat hover:text-orange-500' to='/About'>
                     <BsInfoSquareFill className='mr-5 text-xl' /> About
                   </Link>
                 </div>
 
                 <div class="text-sky-600 mb-5 pb-2 border-b">
-                  <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/Projects'>
+                  <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat hover:text-orange-500' to='/Projects'>
                     <RiProjectorFill className='mr-5 text-xl'/> Project
                   </Link>
                 </div>
 
                 <div class="text-sky-600 mb-5 pb-2 border-b">
-                  <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/Blog'>
+                  <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat hover:text-orange-500' to='/Blog'>
                     <SiBlogger className='mr-5 text-xl'/> Blog
                   </Link>
                   <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-sky-600"></span>
                 </div>
 
                 <div class="text-sky-600 mb-5 pb-2 border-b">
-                  <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/Contact'>
+                  <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat hover:text-orange-500' to='/Contact'>
                     <MdContactPage className='mr-5 text-xl'/> Contact
                   </Link>
                 </div>

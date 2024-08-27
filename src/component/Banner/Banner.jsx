@@ -27,11 +27,11 @@ const Banner = () => {
               maintainable and readable.
             </p>
             <div className="lg:px-0 md:px-0 sm:px-5 px-5 flex gap-8 justify-start mt-8">
-              <Link to="/About" className="text-black cursor-pointer hover:bg-[#001d48] hover:text-white hover:bg-transparent border border-[#e9af1d] transition duration-700 px-4 py-3 bg-[#e9af1d] rounded-sm text-base font-Montserrat font-medium" >
+              <Link to="/About" className="text-black cursor-pointer hover:bg-[#001d48] hover:text-white hover:bg-transparent border border-[#e9af1d] transition duration-700 lg:px-4 md:px-1 px-3 lg:py-3 md:py-1 py-3 bg-[#e9af1d] rounded-sm lg:text-base md:text-xs text-xs font-Montserrat font-medium" >
                
                 About Me
               </Link>
-              <a className="text-black cursor-pointer hover:bg-[#001d48] hover:text-white hover:bg-transparent border border-[#e9af1d] transition duration-700 px-4 py-3 bg-[#e9af1d] rounded-sm text-base font-Montserrat flex justify-between items-center gap-4 font-medium" href={CV} download="CV-Sabur-Khan.pdf" >
+              <a className="text-black cursor-pointer hover:bg-[#001d48] hover:text-white hover:bg-transparent border border-[#e9af1d] transition duration-700 lg:px-4 md:px-1 px-3 lg:py-3 md:py-1 py-3 bg-[#e9af1d] rounded-sm lg:text-base md:text-xs text-xs font-Montserrat flex justify-between items-center gap-4 font-medium" href={CV} download="CV-Sabur-Khan.pdf" >
                 Download Resume <FaDownload />
               </a>
             </div>
